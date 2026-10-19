@@ -1,6 +1,5 @@
 import { readFile } from "node:fs/promises"
 import path from "node:path"
-import { notFound } from "next/navigation"
 import DesignSystemCatalog from "./canvas"
 import type { TokenValues } from "./catalog"
 
@@ -10,7 +9,6 @@ export const metadata = {
 }
 
 export default async function DesignSystemPage() {
-  if (process.env.NODE_ENV !== "development") notFound()
   const css = await readFile(
     path.join(process.cwd(), "app/globals.css"),
     "utf8"
