@@ -5,8 +5,16 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { TestimonialProps } from "@/components/testimonial";
 import Image from "next/image";
+
+export type TestimonialCardProps = {
+  logo?: string;
+  quote: string;
+  author: string;
+  role: string;
+  avatarSrc: string;
+  className?: string;
+};
 
 export default function TestimonialCard({
   logo,
@@ -15,7 +23,7 @@ export default function TestimonialCard({
   role,
   avatarSrc,
   className,
-}: TestimonialProps) {
+}: TestimonialCardProps) {
   return (
     <Card
       style={{ backgroundColor: "var(--background)" }}
