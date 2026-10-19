@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "component-canvas": {
+      "source": "ibelick/ui-skills",
+      "sourceType": "github",
+      "skillPath": "skills/component-canvas/SKILL.md",
+      "computedHash": "9c29e39bc6d0b8812b1862e9d99c838e790c12bc93a81f8f9b213555dc2de823"
+    }
+  }
+}
